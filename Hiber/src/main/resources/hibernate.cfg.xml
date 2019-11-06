@@ -4,14 +4,14 @@
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 <session-factory>
-<property name="connection.driver_class">com.Oracle.jdbc.OracleDriver</property>
+<property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
   <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
   <property name="connection.username">system</property>
   <property name="connection.password">tiger</property>
-  <property name="hbm2ddl.auto">create/update</property>
+  <property name="hbm2ddl.auto">create</property>
   <property name="connection.pool_size">1</property>
   <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
-  
+  <mapping resource="com/lti/Hibernateeg/Hiber/Emp.hbm.xml"></mapping>
  
 </session-factory>
 </hibernate-configuration>
